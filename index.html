@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Event Registration</title>
+	</head>
+
+	<h1><u>Register Now</u><h1>
+
+	<div class="form-box">
+	<form action="/action_page.php">
+  		<label for="fname">First Name</label>
+ 		<input type="text" placeholder="Enter First Name"  name="First Name" ><br><br>
+  		<label for="lname">Last Name</label>
+  		<input type="text" placeholder="Enter Last Name"  name="Last Name" ><br><br>
+		<label for="email"><b>Email</b></label>
+   		<input type="text" placeholder="Enter Email" name="email" id="email" required><br><br>
+		<label for="phone"><b>Phone No.</b></label>
+		<input type="text" placeholder="Enter Phone No." name="phone" id="phone" required><br><br>
+		<hr>
+		<p>Choose your gender:</p>
+		<input type = "radio" name = "Gender" value = "Male"> Male
+		<input type = "radio" name = "Gender" value = "Female"> Female
+	
+		<p> Choose the event you want to attend:</p>
+		<input type = "checkbox" name = "Seminar" value = "on">Seminar
+		<input type = "checkbox" name = "Quiz" value = "on">Quiz
+		<input type = "checkbox" name = "Debate" value = "on">Debate
+
+
+		<p> How many people are coming with you?</p>
+		<select name = "dropdown">
+     		<option value = "1" >1</option>
+      		<option value = "2">2</option>
+      		<option value = "3">3</option>
+     		<option value = "4">4</option>
+      		<option value = "5 or more">5 or more</option>
+		</select><br><br>
+
+		<div class="button-parent">
+			<input type = "submit" name = "submit" value = "Submit" />
+			<input type = "reset" name = "reset"  value = "Reset" />
+		</div>
+
+
+		</form> 
+	</div>
+
+	<style>
+      	body {
+        background-image: url('https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+		height: 100%;
+             }
+
+	h1,h2{
+		color:black;
+		text-align: center;
+		font-family:Arial;
+		font-size:18px
+	  }
+	  p{color:black;
+		text-align: left;
+		font-family:Arial;
+		font-size:18px
+
+	  }
+	
+	.form-box{
+		text-align: left;
+  		width: 320px;
+		height: 480px;
+		background-color: rgb(255, 255, 255);
+		position: relative;
+  		border: 10px solid rgb(2, 2, 1);
+		border-radius: 10px;
+  		padding: 70px;
+  		margin: 1% auto;
+	}
+
+	.button-parent{
+		align-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	</style>
+</html>
